@@ -1,6 +1,6 @@
 /*
-4. Write a program to print the circumference and area of a circle of radius entered
-by the user by defining your own method
+3. Define a method that returns the product of two numbers entered by the user.
+
  */
 package com.click2career.function_exercise;
 
