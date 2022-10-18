@@ -12,11 +12,11 @@ public class Factorial {
         int number = scanner.nextInt();
         System.out.println("the factorial of the number is "+calculateFactorial(number));
     }
-
+    //calculates the factorial of the provided nunber
     private static int calculateFactorial(int num) {
         int fact = 1;
         for (int i=1; i<=num; i++){
-           fact = fact * i;
+            fact = fact * i;
         }
         return fact;
     }
