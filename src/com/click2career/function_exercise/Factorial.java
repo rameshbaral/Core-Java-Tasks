@@ -24,6 +24,5 @@ public class Factorial {
         int input = scanner.nextInt();
         int result = factorial.getFactorial(input);
         System.out.println("the factorial of "+ input+ " is "+ result);
-
     }
 }
