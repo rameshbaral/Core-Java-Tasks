@@ -12,7 +12,7 @@ public class GetTotal {
         int sum = getTotal(arg1,arg2);
         System.out.println("the sum is "+sum);
     }
-
+    //returns the total
     private static int getTotal(int arg1, int arg2) {
         return arg1+arg2;
     }
