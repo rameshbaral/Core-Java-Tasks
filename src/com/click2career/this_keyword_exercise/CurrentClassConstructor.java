@@ -1,7 +1,7 @@
 /*
 3) this() : to invoke current class constructor
  */
-package com.click2career.abstraction_exercise.this_keyword_exercise;
+package com.click2career.this_keyword_exercise;
 
 public class CurrentClassConstructor {
     CurrentClassConstructor() {

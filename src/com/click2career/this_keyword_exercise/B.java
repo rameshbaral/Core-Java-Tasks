@@ -2,7 +2,7 @@
 5) this: to pass as argument in the constructor call
 
  */
-package com.click2career.abstraction_exercise.this_keyword_exercise;
+package com.click2career.this_keyword_exercise;
 
 class B{
     PassArgumentInConstructorCall obj;

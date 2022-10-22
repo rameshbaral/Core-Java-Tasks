@@ -1,7 +1,7 @@
 /*
 2) this: to invoke current class method(Implicitly)
  */
-package com.click2career.abstraction_exercise.this_keyword_exercise;
+package com.click2career.this_keyword_exercise;
 
 public class Demo {
     public void greet() {

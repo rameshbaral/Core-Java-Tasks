@@ -1,7 +1,7 @@
 /*
 4) this: to pass as an argument in the method
  */
-package com.click2career.abstraction_exercise.this_keyword_exercise;
+package com.click2career.this_keyword_exercise;
 
 public class PassArgumentToMethod {
     void method(PassArgumentToMethod obj) {

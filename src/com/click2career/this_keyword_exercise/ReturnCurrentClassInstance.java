@@ -2,7 +2,7 @@
 6) this keyword can be used to return current class instance
 
  */
-package com.click2career.abstraction_exercise.this_keyword_exercise;
+package com.click2career.this_keyword_exercise;
 
 public class ReturnCurrentClassInstance {
     ReturnCurrentClassInstance getCurrentClass() {

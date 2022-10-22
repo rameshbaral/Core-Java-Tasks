@@ -1,7 +1,7 @@
 /*
 1) this: to refer current class instance variable
  */
-package com.click2career.abstraction_exercise.this_keyword_exercise;
+package com.click2career.this_keyword_exercise;
 
 public class Car {
     int numberOfGears;
