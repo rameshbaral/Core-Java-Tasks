@@ -12,3 +12,13 @@ from facilities;
 --2  How can you produce a list of all facilities with the word 'Tennis' in their name?
 
 select * from facilities where name like '%Tennis%'
+
+-- 3 How can you retrieve the details of facilities with ID 1 and 5? Try to do it without using the OR
+-- operator.
+
+SELECT *
+FROM
+    facilities
+WHERE
+        facid IN (1,5)
+;
