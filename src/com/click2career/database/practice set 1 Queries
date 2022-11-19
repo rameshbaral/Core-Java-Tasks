@@ -128,3 +128,11 @@ ORDER BY facid, date_part('month', starttime)
 -- 17. Find the total number of members (including guests) who have made at least one booking.
 
 SELECT COUNT(DISTINCT memid) FROM bookings
+
+-- 18. Produce a list of facilities with more than 1000 slots booked. Produce an output table consisting
+--   of facility id and slots, sorted by facility id.
+
+SELECT facid, SUM(slots) FROM bookings
+GROUP BY facid
+HAVING SUM(slots) > 1000
+ORDER BY facid;
