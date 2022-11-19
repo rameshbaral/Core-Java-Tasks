@@ -1,5 +1,5 @@
 /*
-29. Find a triplet that sums to a given value.
+Finds triplet that sums to a given value.
 Example:
 Input:
 n = 6, X = 13
