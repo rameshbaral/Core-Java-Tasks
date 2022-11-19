@@ -38,8 +38,8 @@ ORDER BY  a.starttime;
 --  there are no duplicates in the list, and that results are ordered by (surname, firstname).
 
 SELECT DISTINCT m.firstname, m.surname
-FROM members AS m2
-INNER JOIN members AS m ON (m.memid = m2.recommendedby)
+FROM members AS m1
+INNER JOIN members AS m ON (m.memid = m1.recommendedby)
 ORDER BY m.surname, m.firstname;
 
 --7. How can you output a list of all members, including the individual who recommended them (if
