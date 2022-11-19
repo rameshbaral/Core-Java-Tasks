@@ -114,5 +114,14 @@ SELECT facid, SUM(slots)
 FROM bookings
 WHERE (date_trunc('month', starttime) = '2012-09-01'::dates)
 GROUP BY facid
-ORDER BY SUM(slots)
+ORDER BY SUM(slots);
+
+--  16. Produce a list of the total number of slots booked per facility per month in the year of 2012.
+--   Produce an output table consisting of facility id and slots, sorted by the id and month.
+
+SELECT facid, date_part('month', starttime), SUM(slots)
+FROM bookings
+WHERE date_part('year', starttime) = 2012
+GROUP BY facid, date_part('month', starttime)
+ORDER BY facid, date_part('month', starttime)
 
