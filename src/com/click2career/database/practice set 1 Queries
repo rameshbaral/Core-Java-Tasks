@@ -125,3 +125,6 @@ WHERE date_part('year', starttime) = 2012
 GROUP BY facid, date_part('month', starttime)
 ORDER BY facid, date_part('month', starttime)
 
+-- 17. Find the total number of members (including guests) who have made at least one booking.
+
+SELECT COUNT(DISTINCT memid) FROM bookings
