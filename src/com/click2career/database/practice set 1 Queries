@@ -103,6 +103,9 @@ WHERE recommendedby IS NOT NULL
 GROUP BY recommendedby
 ORDER BY recommendedby
 
+-- 14. SELECT facid, SUM(slots) FROM bookings GROUP BY facid ORDER BY facid;
+
+SELECT facid, SUM(slots) FROM bookings GROUP BY facid ORDER BY facid;
 
 
 
