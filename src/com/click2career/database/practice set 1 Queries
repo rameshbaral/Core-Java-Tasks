@@ -86,3 +86,10 @@ SELECT DISTINCT m.firstname || ' ' || m.surname AS member,
                  FROM members AS r
                  WHERE m.recommendedby = r.memid) AS recommended_by
 FROM members AS m ORDER BY member;
+
+-- 11. For our first foray into aggregates, we're going to stick to something simple. We want to know
+-- how many facilities exist - simply produce a total count.
+
+SELECT COUNT(facid) FROM facilities;
+
+
