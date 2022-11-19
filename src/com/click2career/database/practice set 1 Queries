@@ -9,3 +9,6 @@ select name,
                 'cheap'
            end as cost
 from facilities;
+--2  How can you produce a list of all facilities with the word 'Tennis' in their name?
+
+select * from facilities where name like '%Tennis%'
