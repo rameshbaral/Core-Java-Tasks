@@ -107,6 +107,12 @@ ORDER BY recommendedby
 
 SELECT facid, SUM(slots) FROM bookings GROUP BY facid ORDER BY facid;
 
+-- 15. Produce a list of the total number of slots booked per facility in the month of September 2012.
+--   Produce an output table consisting of facility id and slots, sorted by the number of slots
 
-
+SELECT facid, SUM(slots)
+FROM bookings
+WHERE (date_trunc('month', starttime) = '2012-09-01'::dates)
+GROUP BY facid
+ORDER BY SUM(slots)
 
