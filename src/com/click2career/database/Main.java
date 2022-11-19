@@ -5,7 +5,7 @@ import java.sql.Connection;
 public class Main {
     public static void main(String[] args) {
         //creates table
-       CreateTable.createTable();
+       //CreateTable.createTable();
       //  SetOneQueries.executeSetOneQueries();
        // SetTwoQueries.executeSetTwoQuery();
     }

@@ -16,9 +16,10 @@ select * from facilities where name like '%Tennis%'
 -- 3 How can you retrieve the details of facilities with ID 1 and 5? Try to do it without using the OR
 -- operator.
 
-SELECT *
-FROM
-    facilities
-WHERE
-        facid IN (1,5)
-;
+SELECT * FROM facilities WHERE facid IN (1,5);
+
+-- 4. How can you produce a list of the start times for bookings by members named ‘xyz'?
+SELECT a.starttime
+FROM bookings AS a
+INNER JOIN members AS b ON a.memid = b.memid
+WHERE b.firstname = 'xyz';
