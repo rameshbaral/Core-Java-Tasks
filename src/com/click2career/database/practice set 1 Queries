@@ -23,3 +23,21 @@ SELECT a.starttime
 FROM bookings AS a
 INNER JOIN members AS b ON a.memid = b.memid
 WHERE b.firstname = 'xyz';
+
+--5. How can you produce a list of the start times for bookings for tennis courts, for the date '2012-09-
+--   21'? Return a list of start time and facility name pairings, ordered by the time.
+
+SELECT a.starttime AS start, b.name
+FROM bookings AS a
+INNER JOIN facilities AS b ON a.facid = b.facid
+WHERE b.name LIKE 'Tennis Court%'
+AND date(a.starttime) = '2012-09-21'
+ORDER BY  a.starttime;
+
+-- 6 How can you output a list of all members who have recommended another member? Ensure that
+--  there are no duplicates in the list, and that results are ordered by (surname, firstname).
+
+SELECT DISTINCT m.firstname, m.surname
+FROM members AS m2
+INNER JOIN members AS m ON (m.memid = m2.recommendedby)
+ORDER BY m.surname, m.firstname;
