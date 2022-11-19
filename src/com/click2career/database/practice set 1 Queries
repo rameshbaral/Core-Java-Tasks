@@ -41,3 +41,13 @@ SELECT DISTINCT m.firstname, m.surname
 FROM members AS m2
 INNER JOIN members AS m ON (m.memid = m2.recommendedby)
 ORDER BY m.surname, m.firstname;
+
+--7. How can you output a list of all members, including the individual who recommended them (if
+--   any)? Ensure that results are ordered by (surname, firstname).
+
+SELECT m.firstname, m.surname, r.firstname, r.surname
+FROM members AS m
+LEFT OUTER JOIN members AS r ON (m.recommendedby = r.memid)
+ORDER BY m.surname, m.firstname;
+
+--
