@@ -8,5 +8,6 @@ public class Main {
        //CreateTable.createTable();
       //  SetOneQueries.executeSetOneQueries();
        // SetTwoQueries.executeSetTwoQuery();
+        SetThreeQueries.runSetThreeQuery();
     }
 }
